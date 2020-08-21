@@ -1,2 +1,1 @@
-$ echo a > README
-$ echo aa >> README
+$ echo aa > README
