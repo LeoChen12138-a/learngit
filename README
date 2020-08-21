@@ -1,1 +1,17 @@
 $ vimtutor
+hjkl
+:q! :wq
+x
+i
+A
+dw
+d$
+d[w|e|$]
+[n]w    [n]e    0
+d[n]w
+[n]dd
+u   U   Ctrl+R
+p
+r
+cw  ce  c$
+CTRL-G  |   CTRL-G G    |   CTRL-G gg   |   CTRL-G [n]
