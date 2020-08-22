@@ -14,4 +14,22 @@ u   U   Ctrl+R
 p
 r
 cw  ce  c$
-CTRL-G  |   CTRL-G G    |   CTRL-G gg   |   CTRL-G [n]
+CTRL-g  |   CTRL-g G    |   CTRL-g gg   |   CTRL-g [n]
+/[words]    n   N   ?[words]    CTRL-o  CTRL-i
+%   
+:s/[old]/[new]  |   :s/[old]/[new]/g    |   :#,#s/[old]/[new]/g    |    :%s/[old]/[new]/g   |   :%s/[old]/[new]/gc
+:![command]
+:![command]-->:w [NAME]
+v-->:-->w TEST-->:!dir :!ls    |    v d
+:r [NAME]   |   :r !ls
+o[words]    O[words]
+e   a
+R
+v-->y-->p   |   yw
+/[word]-->n    |    :set ic    |    :set hls is    |    :set noic   |   :nohlsearch    |    /[words]\c
+<HELP>  |   <F1>    |   :help   |   CTRL-w  |   :help w    :help c_CTRL-d   :help insert-index  :help user-manual
+:edit ~/.vimrc-->:r $VIMRUNTIME/vimrc_example.vim-->:write  |   :help vimrc-intro
+:set nocp-->:!ls-->:e-->CTRL-d--><TAB>
+:help user-manual
+
+
