@@ -7,23 +7,23 @@ A
 dw
 d$
 d[w|e|$]
-[n]w    [n]e    0
+[n]w    [n]e    0(行首)
 d[n]w
 [n]dd
-u   U   Ctrl+R
+u(撤销最后一步)   U(恢复原始)   Ctrl+R
 p
 r
-cw  ce  c$
+cw(单词修正)  ce(单词删除)  c$(删除至行末)
 CTRL-g  |   CTRL-g G    |   CTRL-g gg   |   CTRL-g [n]
-/[words]    n   N   ?[words]    CTRL-o  CTRL-i
+/[words]    n   N   ?[words]    CTRL-o(回到原位)  CTRL-i(回到新位置)
 %   
 :s/[old]/[new]  |   :s/[old]/[new]/g    |   :#,#s/[old]/[new]/g    |    :%s/[old]/[new]/g   |   :%s/[old]/[new]/gc
 :![command]
-:![command]-->:w [NAME]
+:![command]-->:w [NAME](保存)
 v-->:-->w TEST-->:!dir :!ls    |    v d
 :r [NAME]   |   :r !ls
-o[words]    O[words]
-e   a
+o[words](下方插入)    O[words]
+e(末尾)   a(插入)
 R
 v-->y-->p   |   yw
 /[word]-->n    |    :set ic    |    :set hls is    |    :set noic   |   :nohlsearch    |    /[words]\c
@@ -31,5 +31,3 @@ v-->y-->p   |   yw
 :edit ~/.vimrc-->:r $VIMRUNTIME/vimrc_example.vim-->:write  |   :help vimrc-intro
 :set nocp-->:!ls-->:e-->CTRL-d--><TAB>
 :help user-manual
-
-
